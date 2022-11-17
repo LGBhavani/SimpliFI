@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<style type="text/css">
+  .card-wrap{
+    background-color: gray;
+    height: 500px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-wrap{
+    transform: rotate(-45deg);
+    background-color: #fff;
+    color:#fff;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-wrap::before{
+    height: 100%;
+    background-color: #06dbe8;
+    position: absolute;
+    content: '';
+    left:0px;
+    width: 20px;
+    z-index: 1;
+  }
+  .logo-wrap::after{
+    height: 100%;
+    background-color: rgba(255,193,7,0.9);
+    position: absolute;
+    content: '';
+    right: 0px;
+    width: 20px;
+
+  }
+  .logo-wrap .logo-inner-wrap::before{
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    content: '';
+    top:0px;
+    width: 100%;
+  }
+  .logo-wrap .logo-inner-wrap::after{
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    width: 100%;
+
+  }
+  .logo-inner-wrap{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:100%;
+  }
+  .text-wrap{
+    transform: rotate(+45deg); 
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .text-wrap .title{
+    font-size: 28px;
+  }
+  .text-wrap .description{
+    font-size: 14px;
+  }
+  .text-wrap .and{
+    color: orange;
+  }
+</style>
+  <div class="card-wrap">
+    <div class="logo-wrap">
+      <div class="logo-inner-wrap">
+        <div class="text-wrap">
+          <div>
+            <div class="title">HTML <span class="and">&</span> CSS</div>
+            <div class="description">design and build website</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
